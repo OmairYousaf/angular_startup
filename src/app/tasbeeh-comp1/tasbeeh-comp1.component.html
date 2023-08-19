@@ -1,0 +1,22 @@
+<!-- <p>tasbeeh-comp1 works!</p> -->
+
+
+<h1 style="text-align: center;">This is Multi Component Example</h1>
+<div class="custom-container" style="margin: 0; ">
+
+    <h1 style="text-align: center;">This is Component 1</h1>
+<div class="centered-text">
+    <p>{{ receivedValue }}</p>
+</div>
+
+
+<div class="button-container">
+<button class="increment-button " (click)="increment()" >Increment In Component 2</button>
+
+<button class="increment-button " (click)="reset()" >Reset In Component 2</button>
+
+
+</div>
+
+</div>
+<app-tasbeeh-comp2 [counter]="counter"  (newItemEvent)="handleNewItem($event)"></app-tasbeeh-comp2>
