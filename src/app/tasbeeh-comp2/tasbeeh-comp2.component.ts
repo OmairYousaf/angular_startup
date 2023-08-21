@@ -8,15 +8,16 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class TasbeehComp2Component {
   @Output() newItemEvent = new EventEmitter<number>();
 @Input() counter:number=0;
-
+@Input() title:string|undefined
 outputValue:number=0;
-addNewItem(value: number) {
+
+incrementValue(value: number) {
   this.outputValue++;
   console.log(this.outputValue)
   this.newItemEvent.emit(this.outputValue);
 }
 
-resetItem(value: number) {
+resetValue(value: number) {
   this.outputValue=0;
   console.log(this.outputValue)
   this.newItemEvent.emit(this.outputValue);

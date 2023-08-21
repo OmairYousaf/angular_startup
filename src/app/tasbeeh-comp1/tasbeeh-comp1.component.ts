@@ -8,20 +8,23 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class TasbeehComp1Component {
 
  @Output() counterChange=new EventEmitter<number>();
- counter:number=0;
-receivedValue:number=0;
+ counter1:number=0;
+ counter2:number=0;
+// receivedValue:number=0;
 
- handleNewItem(value: number) {
-  this.receivedValue = value;
+ handleNewItem1(value: number) {
+  this.counter2 = value;
 }
+handleNewItem2(value: number) {
+  this.counter1 = value;
+}
+//  increment(){
+//   this.counter++
+//  }
 
- increment(){
-  this.counter++
- }
 
-
- reset(){
-  this.counter=0;
- }
+//  reset(){
+//   this.counter=0;
+//  }
 
 }

@@ -1,0 +1,6 @@
+<!-- <p>counter-main works!</p> -->
+
+<div>{{title}}</div>
+
+<app-counter-display [counter]="counterVariable"></app-counter-display>
+<app-counter-action  (signal)="onSignalReceived($event)"></app-counter-action>

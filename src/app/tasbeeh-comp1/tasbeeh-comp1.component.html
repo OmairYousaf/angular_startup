@@ -1,5 +1,5 @@
 <!-- <p>tasbeeh-comp1 works!</p> -->
-
+<!-- 
 
 <h1 style="text-align: center;">This is Multi Component Example</h1>
 <div class="custom-container" style="margin: 0; ">
@@ -18,5 +18,6 @@
 
 </div>
 
-</div>
-<app-tasbeeh-comp2 [counter]="counter"  (newItemEvent)="handleNewItem($event)"></app-tasbeeh-comp2>
+</div> -->
+<app-tasbeeh-comp2 title="Component 1" [counter]="counter1"  (newItemEvent)="handleNewItem1($event)"></app-tasbeeh-comp2>
+<app-tasbeeh-comp2 title="Component 2" [counter]="counter2"  (newItemEvent)="handleNewItem2($event)"></app-tasbeeh-comp2>
