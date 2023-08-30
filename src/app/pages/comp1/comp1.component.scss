@@ -1,0 +1,22 @@
+.container {
+    padding: 10% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-result {
+    padding-left: 40%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.example-radio-group {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    align-items: flex-start;
+}
+
+.example-radio-button {
+    margin: 5px;
+}

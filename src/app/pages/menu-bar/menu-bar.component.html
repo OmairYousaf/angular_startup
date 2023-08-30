@@ -1,0 +1,36 @@
+<div class="menu-bar-main" fxLayout="column" fxLayoutAlign="space-between center">
+    <div class="bar-header" fxLayout="column" fxLayoutAlign="center center">
+        Header INFO
+        <!-- <div class="edit-container">
+            <div class="edit" fxLayout="row" fxLayoutAlign="space-between center">
+
+                <img src="/assets/images/edit.svg" style="width: 15px; height: 15px;">Edit
+            </div>
+        </div> -->
+
+    </div>
+    <!-- <img src='/assets/images/logout.svg' style="width: 20px; height: 20px; "> -->
+
+    <div class="bar-body">
+        <div class="list">
+            <ng-container *ngFor="let item of menuList">
+                <div [ngClass]="{'list-item-selected':item.rout==selectedRout, 'list-items':item.rout!=selectedRout}"
+                    FxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" [routerLink]="item.rout"
+                    (click)="selectedRout  = item.rout">
+                    <mat-icon style="color: #d7816a;">{{item.icon}}</mat-icon>
+
+                    <div>{{item.title}}</div>
+                </div>
+
+            </ng-container>
+        </div>
+
+
+    </div>
+
+    <div class="bar-footer" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="18px">
+        <img src="/assets/images/logout.svg" style="width: 20px;height: 20px;">
+
+        <div class="logout">Logout</div>
+    </div>
+</div>

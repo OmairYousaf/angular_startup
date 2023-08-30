@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+}
+
+.demo-table {
+    width: 100%;
+}
+
+.demo-button-container {
+    padding-bottom: 16px;
+}
+
+.demo-button+.demo-button {
+    margin-left: 8px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}

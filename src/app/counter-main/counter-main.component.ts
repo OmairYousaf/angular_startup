@@ -7,12 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class CounterMainComponent {
 
-  counterVariable:number=0
-  @Input() title:string|undefined
+  counterVariable: number = 0
+  @Input() title: string | undefined
 
-  onSignalReceived(value:number){
+  onSignalReceived(value: number) {
 
-    this.counterVariable=value;
+    this.counterVariable = value;
   }
 
 }
